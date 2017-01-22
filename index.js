@@ -15,11 +15,13 @@ function visualize (fn, log = 'dev') {
     const dateString = `${chalk.grey(start.toLocaleTimeString())}`
     console.log(`> #${requestIndex} ${chalk.bold(req.method)} ${req.url}\t\t${dateString}`)
 
-    try {
-      const parsedJson = await json(req)
-      jsome(parsedJson)
-    } catch (err) {
-      console.log(`JSON body could not be parsed: ${err.message}`)
+    if (req.method !== 'GET') {
+      try {
+        const parsedJson = await json(req)
+        jsome(parsedJson)
+      } catch (err) {
+        console.log(`JSON body could not be parsed: ${err.message}`)
+      }
     }
 
     res.once('finish', () => {

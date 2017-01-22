@@ -1,12 +1,11 @@
 {
   "name": "micro-visualize",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Visualize requests in micro",
   "main": "./dist/index.js",
   "repository": "https://github.com/onbjerg/micro-visualize",
   "license": "MIT",
   "dependencies": {
-    "async-to-gen": "^1.3.0",
     "chalk": "^1.1.3",
     "jsome": "^2.3.25"
   },
@@ -14,6 +13,7 @@
     "micro": "*"
   },
   "devDependencies": {
+    "async-to-gen": "^1.3.0",
     "standard": "^8.6.0"
   },
   "scripts": {

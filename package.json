@@ -19,6 +19,6 @@
   "scripts": {
     "prepublish": "npm run build",
     "build": "mkdir -p dist && async-to-gen index.js > dist/index.js",
-    "lint": "standard"
+    "test": "standard"
   }
 }

@@ -1,5 +1,7 @@
 # `micro-visualize` [![NPM](https://img.shields.io/npm/v/micro-visualize.svg?style=flat)](https://www.npmjs.org/package/micro-visualize) [![travis-ci](https://travis-ci.org/onbjerg/micro-visualize.svg?branch=master)](https://travis-ci.org/onbjerg/micro-visualize)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/onbjerg/micro-visualize.svg)](https://greenkeeper.io/)
+
 Visualizes requests and responses for services written with [`micro`](https://github.com/zeit/micro).
 
 **Screenshot**

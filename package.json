@@ -1,0 +1,21 @@
+{
+  "name": "micro-visualize",
+  "version": "1.0.0",
+  "description": "Visualize requests in micro",
+  "main": "index.js",
+  "repository": "https://github.com/onbjerg/micro-visualize",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "jsome": "^2.3.25"
+  },
+  "peerDependencies": {
+    "micro": "*"
+  },
+  "devDependencies": {
+    "standard": "^8.6.0"
+  },
+  "scripts": {
+    "lint": "standard"
+  }
+}

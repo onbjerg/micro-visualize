@@ -6,7 +6,7 @@ let requestCounter = 0
 function visualize (fn, log = 'dev') {
   return async function logRequest (req, res) {
     const ret = await fn(req, res)
-    if (log  !== 'dev') {
+    if (log !== 'dev') {
       return ret
     }
 

@@ -1,6 +1,6 @@
 {
   "name": "micro-visualize",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "Visualize requests in micro",
   "main": "./dist/index.js",
   "repository": "https://github.com/onbjerg/micro-visualize",
@@ -10,7 +10,7 @@
     "jsome": "^2.3.25"
   },
   "peerDependencies": {
-    "micro": "*"
+    "micro": "^6.2.1"
   },
   "devDependencies": {
     "async-to-gen": "^1.3.0",

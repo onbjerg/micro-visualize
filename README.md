@@ -57,9 +57,11 @@ module.exports = visualize(async function (req, res) {
 ```js
 const visualize = require('micro-visualize')
 
+// Will only visualize requests/responses if
+// ``process.env.NODE_ENV`` is ``dev``
 module.exports = visualize(async function (req, res) {
   return 'Hello, world!'
-}, process.env.NODE_ENV === 'development' ? 'dev' : null)
+}, process.env.NODE_ENV)
 ```
 
 Returns an async **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**.

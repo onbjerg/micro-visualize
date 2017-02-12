@@ -15,7 +15,8 @@ function visualize (fn, log = 'dev') {
     const dateString = `${chalk.grey(start.toLocaleTimeString())}`
     console.log(`> #${requestIndex} ${chalk.bold(req.method)} ${req.url}\t\t${dateString}`)
 
-    if (req.method !== 'GET') {
+    if (req.method !== 'GET' &&
+      res.getHeader('Content-Type') === 'application/json') {
       try {
         const parsedJson = await json(req)
         jsome(parsedJson)

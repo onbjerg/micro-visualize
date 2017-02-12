@@ -20,5 +20,13 @@
     "prepublish": "npm run build",
     "build": "mkdir -p dist && async-to-gen index.js > dist/index.js",
     "test": "standard"
-  }
+  },
+  "keywords": [
+    "micro",
+    "service",
+    "microservice",
+    "zeit-micro",
+    "zeit",
+    "devtool"
+  ]
 }

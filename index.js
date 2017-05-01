@@ -16,7 +16,7 @@ function visualize (fn, log = 'dev') {
     console.log(`> #${requestIndex} ${chalk.bold(req.method)} ${req.url}\t\t${dateString}`)
 
     if (req.method !== 'GET' &&
-      res.getHeader('Content-Type') === 'application/json') {
+      req.headers['content-type'] === 'application/json') {
       try {
         const parsedJson = await json(req)
         jsome(parsedJson)

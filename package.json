@@ -1,6 +1,6 @@
 {
   "name": "micro-visualize",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Visualize requests in micro",
   "main": "./dist/index.js",
   "repository": "https://github.com/onbjerg/micro-visualize",

@@ -1,5 +1,4 @@
 import { RequestHandler } from 'micro'
-import { IncomingMessage, ServerResponse, Server } from 'http'
 
 declare function visualize(
   fn: RequestHandler,
